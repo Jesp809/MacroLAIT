@@ -605,30 +605,43 @@
   &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
   <div id="p-settings" class="page">
     <div class="page-head"><h1 class="page-title">Settings</h1></div>
-    <div class="settings-group">
-      <div class="section-label">Daily Goals</div>
-      <div class="settings-row"><span class="settings-label">&#128293; Calories</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-cal" min="0"><span class="inp-unit">kcal</span></div></div>
-      <div class="settings-row"><span class="settings-label">&#128170; Protein</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-pro" min="0"><span class="inp-unit">g</span></div></div>
-      <div class="settings-row"><span class="settings-label">&#127806; Carbs</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-carb" min="0"><span class="inp-unit">g</span></div></div>
-      <div class="settings-row"><span class="settings-label">&#129361; Fats</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-fat" min="0"><span class="inp-unit">g</span></div></div>
-      <div class="settings-row"><span class="settings-label">&#128167; Water</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-water" min="0"><span class="inp-unit">cups</span></div></div>
+    <div class="stab-bar">
+      <button class="stab-btn active" id="stab-goals" onclick="switchSettingsTab('goals')">&#127919; Goals</button>
+      <button class="stab-btn" id="stab-ai" onclick="switchSettingsTab('ai')">&#129302; AI Scan</button>
     </div>
-    <div class="settings-group">
-      <div class="section-label">Google AI Studio (Escaneo de fotos)</div>
-      <div class="card" style="padding:14px">
-        <div class="field">
-          <label>Google AI Studio API Key</label>
-          <div style="position:relative">
-            <input class="inp" type="password" id="gemini-key" placeholder="AIza..." style="padding-right:42px">
-            <button onclick="toggleKeyVisibility()" id="eye-btn" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:18px;color:var(--text-2)">&#128065;</button>
-          </div>
-        </div>
-        <p style="font-size:12px;color:var(--text-3);margin-top:-6px">Gratis en <strong>aistudio.google.com</strong> &#8594; Get API Key &#183; Sin tarjeta &#183; 15 fotos/min</p>
+
+    <!-- Goals tab -->
+    <div id="stab-goals-content" class="stab-content active">
+      <div class="settings-group">
+        <div class="section-label">Daily Goals</div>
+        <div class="settings-row"><span class="settings-label">&#128293; Calories</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-cal" min="0"><span class="inp-unit">kcal</span></div></div>
+        <div class="settings-row"><span class="settings-label">&#128170; Protein</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-pro" min="0"><span class="inp-unit">g</span></div></div>
+        <div class="settings-row"><span class="settings-label">&#127806; Carbs</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-carb" min="0"><span class="inp-unit">g</span></div></div>
+        <div class="settings-row"><span class="settings-label">&#129361; Fats</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-fat" min="0"><span class="inp-unit">g</span></div></div>
+        <div class="settings-row"><span class="settings-label">&#128167; Water</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-water" min="0"><span class="inp-unit">cups</span></div></div>
       </div>
+      <button class="btn btn-primary btn-full" style="margin-bottom:10px" onclick="saveSettings()">Save Settings</button>
+      <button class="btn btn-ghost btn-full" style="margin-bottom:24px" onclick="clearToday()">Clear Today's Data</button>
     </div>
-    <button class="btn btn-primary btn-full" style="margin-bottom:10px" onclick="saveSettings()">Save Settings</button>
-    <button class="btn btn-ghost btn-full" style="margin-bottom:10px" onclick="testApiKey()">&#128268; Test API Key</button>
-    <button class="btn btn-ghost btn-full" style="margin-bottom:24px" onclick="clearToday()">Clear Today's Data</button>
+
+    <!-- AI tab -->
+    <div id="stab-ai-content" class="stab-content">
+      <div class="settings-group">
+        <div class="section-label">Google AI Studio</div>
+        <div class="card" style="padding:14px">
+          <div class="field">
+            <label>API Key</label>
+            <div style="position:relative">
+              <input class="inp" type="password" id="gemini-key" placeholder="AIza..." style="padding-right:42px">
+              <button onclick="toggleKeyVisibility()" id="eye-btn" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:18px;color:var(--text-2)">&#128065;</button>
+            </div>
+          </div>
+          <p style="font-size:12px;color:var(--text-3);margin-top:-6px">Gratis en <strong>aistudio.google.com</strong> &#8594; Get API Key &#183; Sin tarjeta &#183; 15 fotos/min</p>
+        </div>
+      </div>
+      <button class="btn btn-primary btn-full" style="margin-bottom:10px" onclick="saveSettings()">Save Settings</button>
+      <button class="btn btn-ghost btn-full" style="margin-bottom:24px" onclick="testApiKey()">&#128268; Test API Key</button>
+    </div>
   </div>
 
 </div><!-- /app -->
@@ -1251,8 +1264,8 @@ function renderSettings() {
 function toggleKeyVisibility() {
   const inp = document.getElementById('gemini-key');
   const btn = document.getElementById('eye-btn');
-  if (inp.type === 'password') { inp.type = 'text'; btn.textContent = '&#128584;'; }
-  else { inp.type = 'password'; btn.textContent = '&#128065;'; }
+  if (inp.type === 'password') { inp.type = 'text'; btn.innerHTML = '&#128584;'; }
+  else { inp.type = 'password'; btn.innerHTML = '&#128065;'; }
 }
 
 function saveSettings() {
@@ -1531,6 +1544,13 @@ function saveAsMealFromScan(count) {
 // &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // INIT
 // &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
+function switchSettingsTab(tab) {
+  ['goals','ai'].forEach(t => {
+    document.getElementById('stab-' + t).classList.toggle('active', t === tab);
+    document.getElementById('stab-' + t + '-content').classList.toggle('active', t === tab);
+  });
+}
+
 function init() {
   load();
   setMealType(autoMealType());
