@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>MacroLAIT ‚Äî Smart Nutrition Tracker</title>
+  <title>MacroLAIT &#8212; Smart Nutrition Tracker</title>
   <style>
     :root {
       --bg-primary: #0c0c12;
@@ -41,7 +41,7 @@
       overflow-x: hidden;
     }
 
-    /* ‚îÄ‚îÄ Layout ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Layout &#9472;&#9472; */
     #app {
       max-width: 430px;
       margin: 0 auto;
@@ -55,7 +55,7 @@
       #app { border-left: 1px solid var(--border); border-right: 1px solid var(--border); }
     }
 
-    /* ‚îÄ‚îÄ Typography ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Typography &#9472;&#9472; */
     .page-head { padding: 18px 0 10px; display: flex; align-items: center; justify-content: space-between; }
     .page-title { font-size: 24px; font-weight: 800; letter-spacing: -0.6px; }
     .gradient { background: linear-gradient(135deg, var(--accent), var(--teal)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
@@ -65,14 +65,14 @@
       color: var(--text-3); margin-bottom: 9px;
     }
 
-    /* ‚îÄ‚îÄ Cards ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Cards &#9472;&#9472; */
     .card {
       background: var(--bg-card); border: 1px solid var(--border);
       border-radius: var(--r); padding: 15px; margin-bottom: 11px;
     }
     .card-title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; color: var(--text-3); margin-bottom: 13px; }
 
-    /* ‚îÄ‚îÄ Progress bars ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Progress bars &#9472;&#9472; */
     .macro-stack { display: grid; gap: 11px; }
     .macro-row { display: flex; flex-direction: column; gap: 5px; }
     .macro-label-row { display: flex; justify-content: space-between; align-items: center; }
@@ -84,7 +84,7 @@
     .bar-fill { height: 100%; border-radius: 4px; transition: width 0.55s cubic-bezier(.4,0,.2,1); position: relative; }
     .bar-fill::after { content: ''; position: absolute; top:0; right:0; bottom:0; width:16px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.18)); }
 
-    /* ‚îÄ‚îÄ Bottom Nav ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Bottom Nav &#9472;&#9472; */
     .bottom-nav {
       position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
       width: 100%; max-width: 430px;
@@ -104,7 +104,7 @@
     .nav-btn.active { color: var(--accent); }
     .nav-btn.active .icon-wrap { background: var(--accent-dim); }
 
-    /* ‚îÄ‚îÄ Buttons ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Buttons &#9472;&#9472; */
     .btn {
       border: none; border-radius: var(--r-sm); padding: 11px 16px;
       font-size: 14px; font-weight: 700; cursor: pointer;
@@ -129,7 +129,7 @@
     .icon-btn svg { width: 16px; height: 16px; }
     .icon-btn.del:hover { color: var(--danger); }
 
-    /* ‚îÄ‚îÄ Upload area ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Upload area &#9472;&#9472; */
     .upload-zone {
       border: 2px dashed var(--border-hi); border-radius: var(--r);
       padding: 36px 16px; text-align: center; cursor: pointer;
@@ -140,7 +140,7 @@
     .upload-zone p { font-size: 14px; color: var(--text-2); margin-top: 5px; }
     .upload-zone strong { color: var(--text-1); font-size: 16px; }
 
-    /* ‚îÄ‚îÄ Food entries ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Food entries &#9472;&#9472; */
     .entry-row {
       display: flex; align-items: center; gap: 10px; padding: 10px 0;
       border-bottom: 1px solid var(--border); animation: fadeSlide .28s ease both;
@@ -162,7 +162,7 @@
     .entry-cal-num { font-size: 14px; font-weight: 800; color: var(--cal); }
     .entry-cal-unit { font-size: 10px; color: var(--text-3); }
 
-    /* ‚îÄ‚îÄ Modals ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Modals &#9472;&#9472; */
     .overlay {
       position: fixed; inset: 0; background: rgba(0,0,0,.72);
       backdrop-filter: blur(5px); -webkit-backdrop-filter: blur(5px);
@@ -183,7 +183,7 @@
     .sheet-handle { width: 36px; height: 4px; background: var(--border); border-radius: 2px; margin: 0 auto 18px; }
     .sheet-title { font-size: 19px; font-weight: 800; margin-bottom: 16px; letter-spacing: -.4px; }
 
-    /* ‚îÄ‚îÄ Forms ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Forms &#9472;&#9472; */
     .field { margin-bottom: 14px; }
     .field label { display: block; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .6px; color: var(--text-2); margin-bottom: 7px; }
     .inp {
@@ -198,7 +198,7 @@
     .inp-unit { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); font-size: 12px; color: var(--text-3); pointer-events: none; }
     .macro-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
 
-    /* ‚îÄ‚îÄ Portion selector ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Portion selector &#9472;&#9472; */
     .portion-row { display: flex; gap: 7px; }
     .portion-chip {
       flex: 1; padding: 9px 0; border: 1px solid var(--border);
@@ -208,7 +208,7 @@
     }
     .portion-chip.active { border-color: var(--accent); color: var(--accent); background: var(--accent-dim); }
 
-    /* ‚îÄ‚îÄ Water ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Water &#9472;&#9472; */
     .water-row { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
     .water-big { font-size: 32px; font-weight: 800; color: var(--h2o); }
     .water-sub { font-size: 13px; color: var(--text-2); }
@@ -221,7 +221,7 @@
     }
     .water-btn:hover { background: rgba(56,189,248,.18); }
 
-    /* ‚îÄ‚îÄ Toggle switch ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Toggle switch &#9472;&#9472; */
     .toggle-wrap { display: flex; align-items: center; justify-content: space-between; width: 100%; }
     .toggle { position: relative; display: inline-block; width: 44px; height: 26px; flex-shrink: 0; }
     .toggle input { opacity: 0; width: 0; height: 0; }
@@ -237,7 +237,7 @@
     .toggle input:checked + .toggle-slider { background: var(--accent); border-color: var(--accent); }
     .toggle input:checked + .toggle-slider::before { transform: translateX(18px); background: #fff; }
 
-    /* ‚îÄ‚îÄ Tab bar ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Tab bar &#9472;&#9472; */
     .tab-bar {
       display: flex; background: var(--bg-tertiary); border-radius: var(--r-sm);
       padding: 3px; margin-bottom: 15px;
@@ -248,7 +248,7 @@
     }
     .tab.active { background: var(--bg-card); color: var(--text-1); box-shadow: 0 2px 8px rgba(0,0,0,.35); }
 
-    /* ‚îÄ‚îÄ Meal cards ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Meal cards &#9472;&#9472; */
     .meal-card {
       background: var(--bg-card); border: 1px solid var(--border);
       border-radius: var(--r); padding: 13px; margin-bottom: 9px;
@@ -262,7 +262,7 @@
     .meal-kcal-unit { font-size: 10px; font-weight: 400; }
     .meal-actions { display: flex; gap: 3px; }
 
-    /* ‚îÄ‚îÄ History ‚îÄ‚îÄ */
+    /* &#9472;&#9472; History &#9472;&#9472; */
     .history-card {
       background: var(--bg-card); border: 1px solid var(--border);
       border-radius: var(--r); padding: 14px; margin-bottom: 9px; cursor: pointer; transition: all .18s;
@@ -276,7 +276,7 @@
     .history-pills { display: flex; gap: 6px; flex-wrap: wrap; }
     .pill { font-size: 11px; color: var(--text-2); background: var(--bg-tertiary); padding: 3px 9px; border-radius: 20px; }
 
-    /* ‚îÄ‚îÄ Weekly chart ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Weekly chart &#9472;&#9472; */
     .weekly-chart { display: flex; gap: 7px; align-items: flex-end; height: 90px; margin-bottom: 10px; }
     .week-col { flex: 1; display: flex; flex-direction: column; align-items: center; height: 100%; justify-content: flex-end; }
     .week-bar { width: 100%; border-radius: 5px 5px 0 0; min-height: 4px; transition: height .5s ease; }
@@ -289,7 +289,7 @@
     .weekly-macro-row:last-child { border-bottom: none; }
     .weekly-avg { font-weight: 800; }
 
-    /* ‚îÄ‚îÄ Chat FAB ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Chat FAB &#9472;&#9472; */
     .chat-fab {
       position: fixed; bottom: 90px; right: 15px;
       width: 52px; height: 52px; border-radius: 50%;
@@ -300,7 +300,7 @@
     .chat-fab:hover { transform: scale(1.08); }
     .chat-fab svg { width: 23px; height: 23px; color: #fff; }
 
-    /* ‚îÄ‚îÄ Chat Panel ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Chat Panel &#9472;&#9472; */
     .chat-panel {
       position: fixed; bottom: 0; left: 50%; transform: translateX(-50%) translateY(100%);
       width: 100%; max-width: 430px; height: 66dvh;
@@ -347,7 +347,7 @@
     .chat-send:hover { background: #6d5ce0; }
     .chat-send svg { width: 17px; height: 17px; color: #fff; }
 
-    /* ‚îÄ‚îÄ Toasts ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Toasts &#9472;&#9472; */
     #toasts { position: fixed; top: 16px; left: 50%; transform: translateX(-50%); z-index: 400; display: flex; flex-direction: column; gap: 7px; pointer-events: none; }
     .toast {
       background: var(--bg-card); border: 1px solid var(--border);
@@ -361,13 +361,13 @@
     @keyframes tIn { from { opacity:0; transform:translateY(-8px); } to { opacity:1; transform:translateY(0); } }
     @keyframes tOut { to { opacity:0; } }
 
-    /* ‚îÄ‚îÄ Empty states ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Empty states &#9472;&#9472; */
     .empty { text-align: center; padding: 36px 16px; color: var(--text-3); }
     .empty-icon { font-size: 46px; margin-bottom: 12px; }
     .empty-title { font-size: 16px; font-weight: 700; color: var(--text-2); margin-bottom: 5px; }
     .empty-desc { font-size: 13px; }
 
-    /* ‚îÄ‚îÄ Settings ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Settings &#9472;&#9472; */
     .settings-group { margin-bottom: 26px; }
     .settings-row {
       background: var(--bg-card); border: 1px solid var(--border);
@@ -377,24 +377,24 @@
     .settings-label { flex: 1; font-size: 14px; font-weight: 500; }
     .settings-inp { width: 88px; text-align: right; }
 
-    /* ‚îÄ‚îÄ Loading ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Loading &#9472;&#9472; */
     .loader { width: 26px; height: 26px; border: 2px solid var(--border); border-top-color: var(--accent); border-radius: 50%; animation: spin .75s linear infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
     .ai-loading { display: flex; flex-direction: column; align-items: center; gap: 16px; padding: 38px 20px; }
     .pulse { width: 64px; height: 64px; border-radius: 50%; background: var(--accent-dim); display: flex; align-items: center; justify-content: center; animation: pulse 1.4s ease-in-out infinite; }
     @keyframes pulse { 0%,100% { transform:scale(1); opacity:1; } 50% { transform:scale(1.1); opacity:.7; } }
 
-    /* ‚îÄ‚îÄ Preview img in modal ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Preview img in modal &#9472;&#9472; */
     .food-img { width:100%; max-height:210px; object-fit:cover; border-radius:var(--r); margin-bottom:14px; }
     .ai-note { font-size:12px; color:var(--text-2); background:var(--bg-tertiary); border-radius:var(--r-sm); padding:9px 11px; margin-bottom:13px; line-height:1.4; }
 
-    /* ‚îÄ‚îÄ Stats summary strip ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Stats summary strip &#9472;&#9472; */
     .stats-strip { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; margin-bottom: 12px; }
     .stat-cell { background: var(--bg-card); border: 1px solid var(--border); border-radius: var(--r-sm); padding: 10px; text-align: center; }
     .stat-val { font-size: 18px; font-weight: 800; }
     .stat-lbl { font-size: 10px; color: var(--text-3); margin-top: 2px; }
 
-    /* ‚îÄ‚îÄ Upload zone ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Upload zone &#9472;&#9472; */
     .upload-zone {
       border: 2px dashed var(--border-hi); border-radius: var(--r);
       padding: 28px 16px; text-align: center; cursor: pointer;
@@ -405,7 +405,7 @@
     .upload-zone strong { font-size: 15px; display: block; }
     .upload-zone p { font-size: 13px; color: var(--text-2); margin-top: 4px; }
 
-    /* ‚îÄ‚îÄ Scan results ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Scan results &#9472;&#9472; */
     .scan-item {
       display: flex; align-items: center; gap: 10px;
       padding: 10px 0; border-bottom: 1px solid var(--border);
@@ -422,7 +422,7 @@
     .scan-macro-inp:focus { border-color: var(--accent); }
     .scan-macro-lbl { font-size: 10px; color: var(--text-3); text-align: center; margin-top: 2px; }
 
-    /* ‚îÄ‚îÄ Meal type pills ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Meal type pills &#9472;&#9472; */
     .meal-type-row { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:13px; }
     .mtype-pill {
       padding:7px 13px; border-radius:20px; font-size:13px; font-weight:600;
@@ -431,7 +431,7 @@
     }
     .mtype-pill.active { border-color:var(--accent); background:var(--accent-dim); color:var(--text-1); }
 
-    /* ‚îÄ‚îÄ Quick-add saved meals ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Quick-add saved meals &#9472;&#9472; */
     .quick-meals-scroll { display:flex; gap:8px; overflow-x:auto; padding-bottom:6px; margin-bottom:11px; -webkit-overflow-scrolling:touch; }
     .quick-meals-scroll::-webkit-scrollbar { display:none; }
     .qm-chip {
@@ -443,7 +443,7 @@
     .qm-chip-name { font-size:13px; font-weight:600; white-space:nowrap; color:var(--text-1); }
     .qm-chip-cal { font-size:11px; color:var(--text-3); white-space:nowrap; }
 
-    /* ‚îÄ‚îÄ Dashboard meal groups ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Dashboard meal groups &#9472;&#9472; */
     .meal-group { margin-bottom:2px; }
     .meal-group-hdr {
       display:flex; align-items:center; gap:6px;
@@ -452,7 +452,7 @@
     }
     .meal-group-total { margin-left:auto; font-size:11px; font-weight:600; color:var(--text-3); }
 
-    /* ‚îÄ‚îÄ Scrollbar ‚îÄ‚îÄ */
+    /* &#9472;&#9472; Scrollbar &#9472;&#9472; */
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: transparent; }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
@@ -461,9 +461,9 @@
 <body>
 <div id="app">
 
-  <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+  <!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
        PAGE: DASHBOARD
-  ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+  &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
   <div id="p-dash" class="page active">
     <div class="page-head">
       <div>
@@ -484,7 +484,7 @@
     <div class="card">
       <div class="card-title">Hydration</div>
       <div class="water-row">
-        <span style="font-size:32px">üíß</span>
+        <span style="font-size:32px">&#128167;</span>
         <div>
           <div class="water-big"><span id="w-cur">0</span><span style="font-size:16px;color:var(--text-2);font-weight:500"> cups</span></div>
           <div class="water-sub">Goal: <span id="w-goal-lbl">8</span> cups</div>
@@ -492,7 +492,7 @@
       </div>
       <div class="bar-track" style="margin-bottom:12px"><div class="bar-fill" id="w-bar" style="background:var(--h2o)"></div></div>
       <div class="water-btns">
-        <button class="water-btn" onclick="addWater(0.5)">+¬Ω Cup</button>
+        <button class="water-btn" onclick="addWater(0.5)">+&#189; Cup</button>
         <button class="water-btn" onclick="addWater(1)">+1 Cup</button>
         <button class="water-btn" onclick="addWater(2)">+2 Cups</button>
       </div>
@@ -507,18 +507,18 @@
     <div style="height:8px"></div>
   </div>
 
-  <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+  <!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
        PAGE: LOG
-  ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+  &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
   <div id="p-log" class="page">
     <div class="page-head"><h1 class="page-title">Add Food</h1></div>
 
     <!-- Meal type selector -->
     <div class="meal-type-row">
-      <button class="mtype-pill active" id="mt-breakfast" onclick="setMealType('breakfast')">‚òÄÔ∏è Breakfast</button>
-      <button class="mtype-pill" id="mt-lunch" onclick="setMealType('lunch')">üå§Ô∏è Lunch</button>
-      <button class="mtype-pill" id="mt-dinner" onclick="setMealType('dinner')">üåô Dinner</button>
-      <button class="mtype-pill" id="mt-snack" onclick="setMealType('snack')">‚ö° Snack</button>
+      <button class="mtype-pill active" id="mt-breakfast" onclick="setMealType('breakfast')">&#9728;&#65039; Breakfast</button>
+      <button class="mtype-pill" id="mt-lunch" onclick="setMealType('lunch')">&#127780;&#65039; Lunch</button>
+      <button class="mtype-pill" id="mt-dinner" onclick="setMealType('dinner')">&#127769; Dinner</button>
+      <button class="mtype-pill" id="mt-snack" onclick="setMealType('snack')">&#9889; Snack</button>
     </div>
 
     <!-- Quick-add saved meals -->
@@ -528,7 +528,7 @@
     </div>
 
     <div class="upload-zone" onclick="document.getElementById('scanInput').click()">
-      <div class="upload-icon">üì∏</div>
+      <div class="upload-icon">&#128248;</div>
       <strong>Foto de plato o cuaderno</strong>
       <p>Gemini AI detecta la comida o lee tu escritura y estima los macros</p>
     </div>
@@ -569,15 +569,15 @@
       </div>
       <div style="display:flex;align-items:center;gap:8px;margin-bottom:12px">
         <input type="checkbox" id="m-save-meal" style="accent-color:var(--accent);width:16px;height:16px;cursor:pointer;flex-shrink:0">
-        <label for="m-save-meal" style="font-size:13px;color:var(--text-2);cursor:pointer">Guardar como Meal template ‚≠ê</label>
+        <label for="m-save-meal" style="font-size:13px;color:var(--text-2);cursor:pointer">Guardar como Meal template &#11088;</label>
       </div>
       <button class="btn btn-primary btn-full" onclick="saveManual()">Add to Today's Log</button>
     </div>
   </div>
 
-  <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+  <!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
        PAGE: MEALS
-  ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+  &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
   <div id="p-meals" class="page">
     <div class="page-head">
       <h1 class="page-title">Saved Meals</h1>
@@ -587,31 +587,31 @@
     <div id="meals-list"></div>
   </div>
 
-  <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+  <!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
        PAGE: HISTORY
-  ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+  &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
   <div id="p-history" class="page">
     <div class="page-head"><h1 class="page-title">History</h1></div>
     <div class="tab-bar">
-      <div class="tab active" id="htab-log" onclick="setHistoryTab('log')">üìÖ Log</div>
-      <div class="tab" id="htab-weekly" onclick="setHistoryTab('weekly')">üìä Weekly</div>
+      <div class="tab active" id="htab-log" onclick="setHistoryTab('log')">&#128197; Log</div>
+      <div class="tab" id="htab-weekly" onclick="setHistoryTab('weekly')">&#128202; Weekly</div>
     </div>
     <div id="history-log-view"><div id="history-list"></div></div>
     <div id="history-weekly-view" style="display:none"><div id="weekly-content"></div></div>
   </div>
 
-  <!-- ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+  <!-- &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
        PAGE: SETTINGS
-  ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê -->
+  &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552; -->
   <div id="p-settings" class="page">
     <div class="page-head"><h1 class="page-title">Settings</h1></div>
     <div class="settings-group">
       <div class="section-label">Daily Goals</div>
-      <div class="settings-row"><span class="settings-label">üî• Calories</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-cal" min="0"><span class="inp-unit">kcal</span></div></div>
-      <div class="settings-row"><span class="settings-label">üí™ Protein</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-pro" min="0"><span class="inp-unit">g</span></div></div>
-      <div class="settings-row"><span class="settings-label">üåæ Carbs</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-carb" min="0"><span class="inp-unit">g</span></div></div>
-      <div class="settings-row"><span class="settings-label">ü•ë Fats</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-fat" min="0"><span class="inp-unit">g</span></div></div>
-      <div class="settings-row"><span class="settings-label">üíß Water</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-water" min="0"><span class="inp-unit">cups</span></div></div>
+      <div class="settings-row"><span class="settings-label">&#128293; Calories</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-cal" min="0"><span class="inp-unit">kcal</span></div></div>
+      <div class="settings-row"><span class="settings-label">&#128170; Protein</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-pro" min="0"><span class="inp-unit">g</span></div></div>
+      <div class="settings-row"><span class="settings-label">&#127806; Carbs</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-carb" min="0"><span class="inp-unit">g</span></div></div>
+      <div class="settings-row"><span class="settings-label">&#129361; Fats</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-fat" min="0"><span class="inp-unit">g</span></div></div>
+      <div class="settings-row"><span class="settings-label">&#128167; Water</span><div class="inp-wrap"><input class="inp settings-inp" type="number" id="g-water" min="0"><span class="inp-unit">cups</span></div></div>
     </div>
     <div class="settings-group">
       <div class="section-label">Google AI Studio (Escaneo de fotos)</div>
@@ -620,14 +620,14 @@
           <label>Google AI Studio API Key</label>
           <div style="position:relative">
             <input class="inp" type="password" id="gemini-key" placeholder="AIza..." style="padding-right:42px">
-            <button onclick="toggleKeyVisibility()" id="eye-btn" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:18px;color:var(--text-2)">üëÅ</button>
+            <button onclick="toggleKeyVisibility()" id="eye-btn" style="position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:none;cursor:pointer;font-size:18px;color:var(--text-2)">&#128065;</button>
           </div>
         </div>
-        <p style="font-size:12px;color:var(--text-3);margin-top:-6px">Gratis en <strong>aistudio.google.com</strong> ‚Üí Get API Key ¬∑ Sin tarjeta ¬∑ 15 fotos/min</p>
+        <p style="font-size:12px;color:var(--text-3);margin-top:-6px">Gratis en <strong>aistudio.google.com</strong> &#8594; Get API Key &#183; Sin tarjeta &#183; 15 fotos/min</p>
       </div>
     </div>
     <button class="btn btn-primary btn-full" style="margin-bottom:10px" onclick="saveSettings()">Save Settings</button>
-    <button class="btn btn-ghost btn-full" style="margin-bottom:10px" onclick="testApiKey()">üîå Test API Key</button>
+    <button class="btn btn-ghost btn-full" style="margin-bottom:10px" onclick="testApiKey()">&#128268; Test API Key</button>
     <button class="btn btn-ghost btn-full" style="margin-bottom:24px" onclick="clearToday()">Clear Today's Data</button>
   </div>
 
@@ -662,7 +662,7 @@
   </button>
 </nav>
 
-<!-- ‚ïê‚ïê‚ïê OVERLAYS / SHEETS ‚ïê‚ïê‚ïê -->
+<!-- &#9552;&#9552;&#9552; OVERLAYS / SHEETS &#9552;&#9552;&#9552; -->
 
 <!-- Meal Sheet -->
 <div class="overlay" id="mealOverlay">
@@ -704,18 +704,18 @@
 <div id="toasts"></div>
 
 <script>
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // MEAL TYPE
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 let _mealType = 'breakfast';
 let _scanMealType = 'breakfast';
 
 const MEAL_META = {
-  breakfast: { icon: '‚òÄÔ∏è', label: 'Breakfast' },
-  lunch:     { icon: 'üå§Ô∏è', label: 'Lunch' },
-  dinner:    { icon: 'üåô', label: 'Dinner' },
-  snack:     { icon: '‚ö°', label: 'Snack' },
-  other:     { icon: 'üçΩÔ∏è', label: 'Other' },
+  breakfast: { icon: '&#9728;&#65039;', label: 'Breakfast' },
+  lunch:     { icon: '&#127780;&#65039;', label: 'Lunch' },
+  dinner:    { icon: '&#127769;', label: 'Dinner' },
+  snack:     { icon: '&#9889;', label: 'Snack' },
+  other:     { icon: '&#127869;&#65039;', label: 'Other' },
 };
 const MEAL_ORDER = ['breakfast', 'lunch', 'dinner', 'snack', 'other'];
 
@@ -739,9 +739,9 @@ function setScanMealType(type) {
   document.getElementById('smt-' + type)?.classList.add('active');
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // STATE
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 const S = {
   today: todayKey(),
   goals: { cal: 2000, pro: 150, carb: 250, fat: 65, water: 8 },
@@ -751,9 +751,9 @@ const S = {
   geminiKey: '',
 };
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // HELPERS
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function todayKey() { return new Date().toISOString().split('T')[0]; }
 function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2, 7); }
 function clamp(v, lo, hi) { return Math.min(hi, Math.max(lo, v)); }
@@ -794,26 +794,26 @@ function esc(s) {
 function foodEmoji(name) {
   const n = (name || '').toLowerCase();
   const map = [
-    [/chicken|turkey|poultry/, 'üçó'], [/fish|salmon|tuna|cod|tilapia/, 'üêü'],
-    [/egg/, 'ü•ö'], [/salad|spinach|lettuce|broccoli|veget/, 'ü•ó'],
-    [/pizza/, 'üçï'], [/burger|hamburger/, 'üçî'], [/rice|pasta|noodle|spaghetti/, 'üçö'],
-    [/bread|toast|sandwich|bagel|wrap/, 'üçû'], [/apple|banana|fruit|berry|orange/, 'üçé'],
-    [/yogurt|milk|dairy|cheese|cottage/, 'ü•õ'], [/protein|shake|supplement|whey/, 'üí™'],
-    [/coffee|espresso|latte/, '‚òï'], [/tea/, 'üçµ'],
-    [/chocolate|cake|cookie|dessert|ice cream/, 'üç´'],
-    [/steak|beef|pork|meat|ribs|bacon/, 'ü•©'], [/avocado|guacamole/, 'ü•ë'],
-    [/oat|granola|cereal|muesli/, 'ü•£'], [/soup|stew|broth/, 'üç≤'],
-    [/sushi|roll/, 'üç±'], [/taco|burrito|quesadilla/, 'üåÆ'],
-    [/potato|fries|chips/, 'ü•î'], [/smoothie|juice/, 'ü•§'],
-    [/nut|almond|peanut|walnut/, 'ü•ú'], [/olive|oil/, 'ü´í'],
+    [/chicken|turkey|poultry/, '&#127831;'], [/fish|salmon|tuna|cod|tilapia/, '&#128031;'],
+    [/egg/, '&#129370;'], [/salad|spinach|lettuce|broccoli|veget/, '&#129367;'],
+    [/pizza/, '&#127829;'], [/burger|hamburger/, '&#127828;'], [/rice|pasta|noodle|spaghetti/, '&#127834;'],
+    [/bread|toast|sandwich|bagel|wrap/, '&#127838;'], [/apple|banana|fruit|berry|orange/, '&#127822;'],
+    [/yogurt|milk|dairy|cheese|cottage/, '&#129371;'], [/protein|shake|supplement|whey/, '&#128170;'],
+    [/coffee|espresso|latte/, '&#9749;'], [/tea/, '&#127861;'],
+    [/chocolate|cake|cookie|dessert|ice cream/, '&#127851;'],
+    [/steak|beef|pork|meat|ribs|bacon/, '&#129385;'], [/avocado|guacamole/, '&#129361;'],
+    [/oat|granola|cereal|muesli/, '&#129379;'], [/soup|stew|broth/, '&#127858;'],
+    [/sushi|roll/, '&#127857;'], [/taco|burrito|quesadilla/, '&#127790;'],
+    [/potato|fries|chips/, '&#129364;'], [/smoothie|juice/, '&#129380;'],
+    [/nut|almond|peanut|walnut/, '&#129372;'], [/olive|oil/, '&#129746;'],
   ];
   for (const [r, e] of map) if (r.test(n)) return e;
-  return 'üçΩÔ∏è';
+  return '&#127869;&#65039;';
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // STORAGE
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function save() {
   localStorage.setItem('mai_goals', JSON.stringify(S.goals));
   localStorage.setItem('mai_geminikey', S.geminiKey);
@@ -849,9 +849,9 @@ function dayEntries(key) {
 }
 function dayWater(key) { return parseInt(localStorage.getItem('mai_water_' + key) || '0', 10) || 0; }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // NAVIGATION
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function goTo(page) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
   document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
@@ -875,7 +875,7 @@ function renderQuickMeals() {
       <span style="font-size:20px">${foodEmoji(m.name)}</span>
       <div>
         <div class="qm-chip-name">${esc(m.name)}</div>
-        <div class="qm-chip-cal">${m.cal} kcal ¬∑ P:${m.pro}g</div>
+        <div class="qm-chip-cal">${m.cal} kcal &#183; P:${m.pro}g</div>
       </div>
     </div>`).join('');
 }
@@ -885,12 +885,12 @@ function quickAddMeal(mealId) {
   if (!m) return;
   S.entries.push({ id: uid(), ts: Date.now(), name: m.name, cal: m.cal, pro: m.pro, carb: m.carb, fat: m.fat, note: 'saved meal', mealType: _mealType, thumb: null });
   save(); goTo('dash'); renderDash();
-  toast(`"${m.name}" agregado ‚úì`, 'ok');
+  toast(`"${m.name}" agregado &#10003;`, 'ok');
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // DASHBOARD
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function renderDash() {
   document.getElementById('date-badge').textContent = todayLabel();
 
@@ -937,7 +937,7 @@ function renderDash() {
   const el = document.getElementById('entries-list');
   if (!cnt) {
     el.innerHTML = `<div class="empty">
-      <div class="empty-icon">üçΩÔ∏è</div>
+      <div class="empty-icon">&#127869;&#65039;</div>
       <div class="empty-title">No meals logged yet</div>
       <div class="empty-desc">Tap Log below to add food via photo or manually</div>
     </div>`;
@@ -956,7 +956,7 @@ function renderDash() {
       const info = MEAL_META[type];
       html += `<div class="meal-group">
         <div class="meal-group-hdr">${info.icon} ${info.label}
-          <div class="meal-group-total">${Math.round(grpT.cal)} kcal ¬∑ P:${Math.round(grpT.pro)}g</div>
+          <div class="meal-group-total">${Math.round(grpT.cal)} kcal &#183; P:${Math.round(grpT.pro)}g</div>
         </div>
         ${items.map(e => entryRow(e, true)).join('')}
       </div>`;
@@ -982,7 +982,7 @@ function entryRow(e, canDelete) {
       ${thumb}
       <div class="entry-info">
         <div class="entry-name">${esc(e.name)}</div>
-        <div class="entry-macros">P: ${e.pro}g ¬∑ C: ${e.carb}g ¬∑ F: ${e.fat}g</div>
+        <div class="entry-macros">P: ${e.pro}g &#183; C: ${e.carb}g &#183; F: ${e.fat}g</div>
         ${e.note ? `<div class="entry-tag">#${esc(e.note)}</div>` : ''}
       </div>
       <div class="entry-cal">
@@ -1001,12 +1001,12 @@ function deleteEntry(id) {
 function addWater(cups) {
   S.water = Math.round((S.water + cups) * 10) / 10;
   save(); renderDash();
-  toast(`+${cups} cup${cups !== 1 ? 's' : ''} added üíß`, 'info');
+  toast(`+${cups} cup${cups !== 1 ? 's' : ''} added &#128167;`, 'info');
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // MANUAL ENTRY
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function saveManual() {
   const name = document.getElementById('m-name').value.trim();
   if (!name) { toast('Please enter a food name', 'err'); return; }
@@ -1025,24 +1025,24 @@ function saveManual() {
   if (document.getElementById('m-save-meal').checked) {
     S.meals.push({ id: uid(), name: entry.name, cal: entry.cal, pro: entry.pro, carb: entry.carb, fat: entry.fat });
     document.getElementById('m-save-meal').checked = false;
-    toast(`"${name}" guardado como Meal ‚≠ê`, 'ok');
+    toast(`"${name}" guardado como Meal &#11088;`, 'ok');
   }
 
   S.entries.push(entry);
   save();
   ['m-name','m-cal','m-pro','m-carb','m-fat','m-note'].forEach(id => document.getElementById(id).value = '');
   goTo('dash'); renderDash();
-  toast(`"${name}" logged ‚úì`, 'ok');
+  toast(`"${name}" logged &#10003;`, 'ok');
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // MEALS
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function renderMeals() {
   const el = document.getElementById('meals-list');
   if (!S.meals.length) {
     el.innerHTML = `<div class="empty">
-      <div class="empty-icon">‚≠ê</div>
+      <div class="empty-icon">&#11088;</div>
       <div class="empty-title">No saved meals yet</div>
       <div class="empty-desc">Save from AI analysis or create manually with + New</div>
     </div>`;
@@ -1053,7 +1053,7 @@ function renderMeals() {
       <div class="meal-emoji">${foodEmoji(m.name)}</div>
       <div style="flex:1;min-width:0">
         <div class="meal-name">${esc(m.name)}</div>
-        <div class="meal-macros">P: ${m.pro}g ¬∑ C: ${m.carb}g ¬∑ F: ${m.fat}g</div>
+        <div class="meal-macros">P: ${m.pro}g &#183; C: ${m.carb}g &#183; F: ${m.fat}g</div>
       </div>
       <div class="meal-kcal">${m.cal}<span class="meal-kcal-unit"> kcal</span></div>
       <div class="meal-actions" onclick="event.stopPropagation()">
@@ -1072,7 +1072,7 @@ function addMealToLog(mealId) {
   if (!m) return;
   S.entries.push({ id: uid(), ts: Date.now(), name: m.name, cal: m.cal, pro: m.pro, carb: m.carb, fat: m.fat, note: 'saved meal', mealType: autoMealType(), thumb: null });
   save(); goTo('dash'); renderDash();
-  toast(`"${m.name}" added ‚úì`, 'ok');
+  toast(`"${m.name}" added &#10003;`, 'ok');
 }
 
 function openMealSheet(mealId) {
@@ -1110,7 +1110,7 @@ function saveMeal() {
   };
   S.meals = eid ? S.meals.map(m => m.id === eid ? data : m) : [...S.meals, data];
   save(); closeMealSheet(); renderMeals();
-  toast(eid ? 'Meal updated ‚úì' : 'Meal saved ‚≠ê', 'ok');
+  toast(eid ? 'Meal updated &#10003;' : 'Meal saved &#11088;', 'ok');
 }
 
 function deleteMeal(id) {
@@ -1118,9 +1118,9 @@ function deleteMeal(id) {
   save(); renderMeals(); toast('Meal deleted', 'info');
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // HISTORY
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 let _htab = 'log';
 
 function setHistoryTab(tab) {
@@ -1137,7 +1137,7 @@ function renderHistory() {
   const el = document.getElementById('history-list');
   if (!days.length) {
     el.innerHTML = `<div class="empty">
-      <div class="empty-icon">üìÖ</div>
+      <div class="empty-icon">&#128197;</div>
       <div class="empty-title">No history yet</div>
       <div class="empty-desc">Start logging meals and they'll appear here</div>
     </div>`;
@@ -1151,11 +1151,11 @@ function renderHistory() {
       <div class="history-card" onclick="showHistoryDay('${key}')">
         <div class="history-head">
           <div class="history-date">${fmtDate(key)}</div>
-          <div class="badge ${onTrack ? 'badge-ok' : 'badge-miss'}">${onTrack ? '‚úì On Track' : '‚úó Missed'}</div>
+          <div class="badge ${onTrack ? 'badge-ok' : 'badge-miss'}">${onTrack ? '&#10003; On Track' : '&#10007; Missed'}</div>
         </div>
         <div class="history-pills">
-          <span class="pill">üî• ${Math.round(t.cal)} kcal</span>
-          <span class="pill">üí™ ${Math.round(t.pro)}g P</span>
+          <span class="pill">&#128293; ${Math.round(t.cal)} kcal</span>
+          <span class="pill">&#128170; ${Math.round(t.pro)}g P</span>
           <span class="pill">${entries.length} items</span>
         </div>
       </div>`;
@@ -1179,9 +1179,9 @@ function showHistoryDay(key) {
   openOverlay('historyOverlay');
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // WEEKLY SUMMARY
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function renderWeekly() {
   const days = Array.from({ length: 7 }, (_, i) => {
     const d = new Date(); d.setDate(d.getDate() - (6 - i));
@@ -1201,7 +1201,7 @@ function renderWeekly() {
 
   document.getElementById('weekly-content').innerHTML = `
     <div class="card">
-      <div class="card-title">Calorie Progress ¬∑ Last 7 Days</div>
+      <div class="card-title">Calorie Progress &#183; Last 7 Days</div>
       <div class="weekly-chart">
         ${days.map(d => {
           const h = (d.t.cal / maxCal) * 100;
@@ -1209,7 +1209,7 @@ function renderWeekly() {
           return `<div class="week-col">
             <div class="week-bar" style="height:${h}%;background:${met ? 'var(--success)' : d.t.cal > 0 ? 'var(--warn)' : 'var(--bg-tertiary)'};${d.isToday ? 'border:1px solid var(--accent);' : ''}"></div>
             <div class="week-label">${d.label}</div>
-            <div class="week-icon">${d.t.cal > 0 ? (met ? '‚úÖ' : '‚ùå') : '¬∑'}</div>
+            <div class="week-icon">${d.t.cal > 0 ? (met ? '&#9989;' : '&#10060;') : '&#183;'}</div>
           </div>`;
         }).join('')}
       </div>
@@ -1218,15 +1218,15 @@ function renderWeekly() {
     <div class="card">
       <div class="card-title">7-Day Averages</div>
       ${[
-        { label: 'üî• Calories', key: 'cal', unit: 'kcal', color: 'var(--cal)' },
-        { label: 'üí™ Protein',  key: 'pro', unit: 'g',    color: 'var(--pro)' },
-        { label: 'üåæ Carbs',    key: 'carb',unit: 'g',    color: 'var(--carb)' },
-        { label: 'ü•ë Fats',     key: 'fat', unit: 'g',    color: 'var(--fat)' },
+        { label: '&#128293; Calories', key: 'cal', unit: 'kcal', color: 'var(--cal)' },
+        { label: '&#128170; Protein',  key: 'pro', unit: 'g',    color: 'var(--pro)' },
+        { label: '&#127806; Carbs',    key: 'carb',unit: 'g',    color: 'var(--carb)' },
+        { label: '&#129361; Fats',     key: 'fat', unit: 'g',    color: 'var(--fat)' },
       ].map(m => {
         const a = Math.round(avg[m.key]);
         const p = pct(a, S.goals[m.key]);
         const sc = p >= 90 ? 'color:var(--success)' : p >= 65 ? 'color:var(--warn)' : 'color:var(--danger)';
-        const st = p >= 90 ? `‚úì ${Math.round(p)}%` : `${Math.round(p)}%`;
+        const st = p >= 90 ? `&#10003; ${Math.round(p)}%` : `${Math.round(p)}%`;
         return `<div class="weekly-macro-row">
           <span>${m.label}</span>
           <span class="weekly-avg" style="color:${m.color}">${a} ${m.unit}</span>
@@ -1236,9 +1236,9 @@ function renderWeekly() {
     </div>`;
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // SETTINGS
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function renderSettings() {
   document.getElementById('g-cal').value = S.goals.cal;
   document.getElementById('g-pro').value = S.goals.pro;
@@ -1251,8 +1251,8 @@ function renderSettings() {
 function toggleKeyVisibility() {
   const inp = document.getElementById('gemini-key');
   const btn = document.getElementById('eye-btn');
-  if (inp.type === 'password') { inp.type = 'text'; btn.textContent = 'üôà'; }
-  else { inp.type = 'password'; btn.textContent = 'üëÅ'; }
+  if (inp.type === 'password') { inp.type = 'text'; btn.textContent = '&#128584;'; }
+  else { inp.type = 'password'; btn.textContent = '&#128065;'; }
 }
 
 function saveSettings() {
@@ -1262,7 +1262,7 @@ function saveSettings() {
   S.goals.fat   = parseInt(document.getElementById('g-fat').value)   || 65;
   S.goals.water = parseFloat(document.getElementById('g-water').value) || 8;
   S.geminiKey   = document.getElementById('gemini-key').value.trim();
-  save(); toast('Settings saved ‚úì', 'ok');
+  save(); toast('Settings saved &#10003;', 'ok');
 }
 
 async function testApiKey() {
@@ -1281,13 +1281,13 @@ async function testApiKey() {
     if (res.ok) {
       S.geminiKey = key;
       save();
-      toast('‚úÖ Key v√°lido y guardado correctamente', 'ok');
+      toast('\u2705 Key v&#225;lido y guardado correctamente', 'ok');
     } else {
       const err = await res.json().catch(() => ({}));
-      toast('‚ùå Key inv√°lido: ' + (err.error?.message || res.status), 'err');
+      toast('\u274c Key inv&#225;lido: ' + (err.error?.message || res.status), 'err');
     }
   } catch (e) {
-    toast('‚ùå Error de conexi√≥n: ' + e.message, 'err');
+    toast('&#10060; Error de conexi&#243;n: ' + e.message, 'err');
   }
 }
 
@@ -1297,9 +1297,9 @@ function clearToday() {
   toast('Today\'s data cleared', 'info');
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // OVERLAY HELPERS
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function openOverlay(id) { document.getElementById(id).classList.add('open'); }
 function closeOverlay(id) { document.getElementById(id).classList.remove('open'); }
 
@@ -1307,9 +1307,9 @@ document.querySelectorAll('.overlay').forEach(ov => {
   ov.addEventListener('click', e => { if (e.target === ov) ov.classList.remove('open'); });
 });
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // TOAST
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function toast(msg, type = 'info') {
   const c = document.getElementById('toasts');
   const t = document.createElement('div');
@@ -1319,9 +1319,9 @@ function toast(msg, type = 'info') {
   setTimeout(() => t.remove(), 3200);
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // GEMINI PHOTO SCAN
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 document.getElementById('scanInput').addEventListener('change', async e => {
   const file = e.target.files[0];
   if (!file) return;
@@ -1336,10 +1336,10 @@ document.getElementById('scanInput').addEventListener('change', async e => {
   document.getElementById('scanContent').innerHTML = `
     <div class="ai-loading">
       <div class="pulse" style="background:var(--teal-dim)">
-        <span style="font-size:28px">üìì</span>
+        <span style="font-size:28px">&#128211;</span>
       </div>
       <div class="sheet-title" style="text-align:center">Analizando imagen...</div>
-      <p style="color:var(--text-2);font-size:14px;text-align:center">Gemini AI est√° leyendo y estimando los macros</p>
+      <p style="color:var(--text-2);font-size:14px;text-align:center">Gemini AI est&#225; leyendo y estimando los macros</p>
     </div>`;
   openOverlay('scanOverlay');
 
@@ -1377,46 +1377,50 @@ async function readImage(file) {
 }
 
 async function scanWithGemini(base64, mimeType) {
-  const prompt = `Analiza esta imagen. Puede ser DOS tipos de contenido ‚Äî detecta cu√°l es y act√∫a en consecuencia:
+  const prompt = `Analiza esta imagen. Puede ser DOS tipos de contenido &#8212; detecta cu&#225;l es y act&#250;a en consecuencia:
 
-TIPO A ‚Äî Foto de un plato o comida real:
-‚Üí Identifica el plato, estima macros para la porci√≥n visible. Devuelve 1 solo item.
+TIPO A &#8212; Foto de un plato o comida real:
+&#8594; Identifica el plato, estima macros para la porci&#243;n visible. Devuelve 1 solo item.
 
-TIPO B ‚Äî Lista de comida escrita a mano (cuaderno, papel):
-‚Üí Lee TODOS los alimentos listados con sus cantidades y estima macros para cada uno.
-‚Üí Nota: "gmo"/"gmos" = gramos. "Cup" = taza (240ml). "oz" = onzas.
-‚Üí Incluye todo: aceites, suplementos, caf√©, condimentos, etc.
+TIPO B &#8212; Lista de comida escrita a mano (cuaderno, papel):
+&#8594; Lee TODOS los alimentos listados con sus cantidades y estima macros para cada uno.
+&#8594; Nota: "gmo"/"gmos" = gramos. "Cup" = taza (240ml). "oz" = onzas.
+&#8594; Incluye todo: aceites, suplementos, caf&#233;, condimentos, etc.
 
-En ambos casos devuelve √öNICAMENTE un array JSON v√°lido, sin markdown ni texto extra:
+En ambos casos devuelve &#218;NICAMENTE un array JSON v&#225;lido, sin markdown ni texto extra:
 [{"name":"nombre con cantidad","cal":0,"pro":0,"carb":0,"fat":0}]`;
 
-  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${S.geminiKey}`, {
+  const res = await fetch('https://openrouter.ai/api/v1/chat/completions', {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
+    headers: {
+      'Content-Type': 'application/json',
+      'Authorization': `Bearer ${S.geminiKey}`
+    },
     body: JSON.stringify({
-      contents: [{
-        parts: [
-          { inline_data: { mime_type: mimeType, data: base64 } },
-          { text: prompt }
+      model: 'meta-llama/llama-3.2-11b-vision-instruct:free',
+      messages: [{
+        role: 'user',
+        content: [
+          { type: 'image_url', image_url: { url: `data:${mimeType};base64,${base64}` } },
+          { type: 'text', text: prompt }
         ]
       }],
-      generationConfig: { maxOutputTokens: 1024 }
+      max_tokens: 1024
     })
   });
 
   if (!res.ok) {
     const err = await res.json().catch(() => ({}));
     const msg = err.error?.message || '';
-    if (res.status === 400) throw new Error('API Key inv√°lida o request mal formado. Verifica el key en Settings.');
-    if (res.status === 403) throw new Error('API Key inv√°lida. Obt√©n uno gratis en aistudio.google.com');
-    if (res.status === 429) throw new Error('L√≠mite alcanzado (15/min). Espera un momento e intenta de nuevo.');
+    if (res.status === 401 || res.status === 403) throw new Error('API Key inv&#225;lida. Verifica el key en Settings.');
+    if (res.status === 429) throw new Error('L&#237;mite alcanzado. Espera 1 minuto e intenta de nuevo.');
     throw new Error(`[${res.status}] ${msg || 'Error desconocido'}`);
   }
 
   const data = await res.json();
-  const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
+  const text = data.choices?.[0]?.message?.content || '';
   const match = text.match(/\[[\s\S]*\]/);
-  if (!match) throw new Error('No se pudo parsear la respuesta de Gemini');
+  if (!match) throw new Error('No se pudo parsear la respuesta');
   return JSON.parse(match[0]);
 }
 
@@ -1432,7 +1436,7 @@ function showScanResults(items, previewUrl) {
     <img src="${previewUrl}" style="width:100%;max-height:160px;object-fit:cover;border-radius:var(--r);margin-bottom:12px">
 
     <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:6px;margin-bottom:14px">
-      ${[['üî•',totalCal,'kcal','var(--cal)'],['üí™',totalPro,'g P','var(--pro)'],['üåæ',totalCarb,'g C','var(--carb)'],['ü•ë',totalFat,'g F','var(--fat)']].map(([e,v,u,c])=>`
+      ${[['&#128293;',totalCal,'kcal','var(--cal)'],['&#128170;',totalPro,'g P','var(--pro)'],['&#127806;',totalCarb,'g C','var(--carb)'],['&#129361;',totalFat,'g F','var(--fat)']].map(([e,v,u,c])=>`
         <div style="background:var(--bg-tertiary);border-radius:8px;padding:8px;text-align:center">
           <div style="font-size:16px;font-weight:800;color:${c}">${v}</div>
           <div style="font-size:10px;color:var(--text-3)">${e} ${u}</div>
@@ -1469,18 +1473,18 @@ function showScanResults(items, previewUrl) {
 
     <div class="section-label" style="margin:12px 0 6px">Tipo de comida</div>
     <div class="meal-type-row">
-      <button class="mtype-pill" id="smt-breakfast" onclick="setScanMealType('breakfast')">‚òÄÔ∏è Breakfast</button>
-      <button class="mtype-pill" id="smt-lunch" onclick="setScanMealType('lunch')">üå§Ô∏è Lunch</button>
-      <button class="mtype-pill" id="smt-dinner" onclick="setScanMealType('dinner')">üåô Dinner</button>
-      <button class="mtype-pill" id="smt-snack" onclick="setScanMealType('snack')">‚ö° Snack</button>
+      <button class="mtype-pill" id="smt-breakfast" onclick="setScanMealType('breakfast')">&#9728;&#65039; Breakfast</button>
+      <button class="mtype-pill" id="smt-lunch" onclick="setScanMealType('lunch')">&#127780;&#65039; Lunch</button>
+      <button class="mtype-pill" id="smt-dinner" onclick="setScanMealType('dinner')">&#127769; Dinner</button>
+      <button class="mtype-pill" id="smt-snack" onclick="setScanMealType('snack')">&#9889; Snack</button>
     </div>
 
     <div style="display:flex;gap:8px;margin-top:4px">
       <button class="btn btn-ghost" style="flex:1" onclick="closeOverlay('scanOverlay')">Cancelar</button>
-      <button class="btn btn-ghost" style="flex:1" onclick="saveAsMealFromScan(${items.length})">‚≠ê Save Meal</button>
+      <button class="btn btn-ghost" style="flex:1" onclick="saveAsMealFromScan(${items.length})">&#11088; Save Meal</button>
     </div>
     <button class="btn btn-primary btn-full" style="margin-top:8px" onclick="logScanItems(${items.length})">
-      Registrar seleccionados ‚úì
+      Registrar seleccionados &#10003;
     </button>`;
   setScanMealType(_scanMealType);
 }
@@ -1505,7 +1509,7 @@ function logScanItems(count) {
   save();
   closeOverlay('scanOverlay');
   goTo('dash'); renderDash();
-  toast(`${added} item${added !== 1 ? 's' : ''} registrado${added !== 1 ? 's' : ''} ‚úì`, 'ok');
+  toast(`${added} item${added !== 1 ? 's' : ''} registrado${added !== 1 ? 's' : ''} &#10003;`, 'ok');
 }
 
 function saveAsMealFromScan(count) {
@@ -1521,12 +1525,12 @@ function saveAsMealFromScan(count) {
   }
   S.meals.push({ id: uid(), name: name.trim(), cal, pro, carb, fat });
   save();
-  toast(`"${name.trim()}" guardado como Meal ‚≠ê`, 'ok');
+  toast(`"${name.trim()}" guardado como Meal &#11088;`, 'ok');
 }
 
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 // INIT
-// ‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê‚ïê
+// &#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;&#9552;
 function init() {
   load();
   setMealType(autoMealType());
